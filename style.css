@@ -1,0 +1,97 @@
+/* reset and fonts */
+@font-face {
+    font-family: "archivo black";
+    src: url(./fonts/Archivo_Black/ArchivoBlack-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html,body {
+    width: 100%;
+    font-family: "archivo black",sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ====================================================================================== */
+
+/* START */
+
+/* Container and reusable elements */
+#container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 140px;
+    height: auto;
+    background-color: #FC6736;
+    color: #000000;
+}
+
+.section:nth-of-type(2n+1) {
+    background-color: #1c1c1c;
+    color: #FC6736;
+}
+/* ====================================================================================== */
+/* navBar */
+
+#navbar {
+    /* sizing */
+    width: 90%;
+    height: 100px;
+    /* positioning */
+    align-self: center;
+    position: fixed;
+    z-index: 100;
+    top: 20px;
+    /* appereance */
+    background-color: #000000;
+    color: #ffff;
+    border-radius: 50px;
+    padding: 10px;
+    /* order */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* navbar pfp */
+#pfp {
+    align-self: center;
+}
+#pfp img {
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* sections */
+#sections {
+    /* sizing */
+    flex:1;
+    /* appearance */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    font-size: clamp(16px, calc(16px + 1vw), 30px);
+}
+#sections a {
+    color: #ffff;
+    transition: all .2s ease-in-out;
+}
+#sections a:hover,#sections a:focus {
+    color: #FC6736;
+}
+
+/* ====================================================================== */
+
