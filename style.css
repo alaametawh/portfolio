@@ -36,6 +36,8 @@ html,body {
     height: auto;
     background-color: #FC6736;
     color: #000000;
+    display: flex;
+    overflow: hidden;
 }
 
 .section:nth-of-type(2n+1) {
@@ -92,6 +94,64 @@ html,body {
 #sections a:hover,#sections a:focus {
     color: #FC6736;
 }
-
+/* class for JS Navbar animation */
+.selected {
+    border-bottom: 2px solid #FC6736;
+    padding-bottom: 3px;
+}
 /* ====================================================================== */
 
+/* Home */
+#home {
+    justify-content: space-between;
+}
+/* Home text */
+#hero {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.2;
+}
+#hero p:first-child {font-size: clamp(36px, calc(20px + 2vw),86px);}
+#hero p:nth-child(2) {font-size: clamp(48px, calc(20px + 5vw), 100px); color: #ffff;}
+#hero p:nth-child(3) {font-size: clamp(32px, calc(20px + 3vw), 60px);}
+#hero p:last-child {font-size: clamp(20px, calc(20px + 2vw), 40px); color: #ffff;}
+/* HomeImg */
+#heroImg {
+    height: calc(100vh - 200px);
+    width: 50%;
+    background-color: #000000;
+    border-radius: 50% 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#popup {font-size: clamp(72px, calc(48px + 7vw), 200px); color: #ffff;}
+.top {position: absolute; z-index: 2; color: transparent !important; -webkit-text-stroke:#FC6736 2px;}
+#heroImg img {
+    position: absolute;
+    width: 100%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #home{
+        flex-direction: column;
+    }
+    #hero {
+        width: 100%;
+    }
+    #heroImg {
+        border-radius: 50% 50% 0 0;
+        height: 40vh;
+        width: 100%;
+        justify-content: center;
+    }
+}
