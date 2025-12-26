@@ -30,6 +30,7 @@
                 <p>alaaeldin .M</p>
                 <p>React Frontend</p>
                 <p>Web Developer</p>
+                <a id="cv-btn">Download CV</a>
             </div>
             <div id="heroImg">
                 <!-- 2 p for appearance -->
@@ -42,12 +43,137 @@
 
         <!-- About -->
         <div id="about" class="section">
+            <div id="title">
+                <p class="back">ABOUT ME</p>
+                <p class="middle">Know Me More</p>
+            </div>
+            <div id="info">
+                <div class="bio">
+                    <p class="name">I'm, <span style="color: #FC6736;">alaaeldin .M</span></p>
+                    <p class="intro">Computer science student at Damietta University focused on front-end web development and building clean, modern and responsive interfaces.</p>
+                </div>
+                <div class="preif">
+                    <p>Name:  <span style="color: #fff;">alaaeldin Metawh</span></p>
+                    <p>Email: <a href="mailto:alaaeldin.dev@gmail.com" style="color: #fff;">alaaeldin.dev@gmail.com</a></p>
+                    <p>Age:   <span style="color: #fff;">20</span></p>
+                    <p>From:  <span style="color: #fff;">Damietta, Egypt 🇪🇬</span></p>
+                    <a id="cv-btn">Download CV</a>
+                </div>
+            </div>
 
         </div>
 
         <!-- Projects -->
         <div id="projects" class="section">
-            
+            <div id="title">
+                <p class="back">SKILLS</p>
+                <p class="middle">My Powers</p>
+            </div>
+            <div id="myskills">
+                <div id="col">
+                    <div id="skill">
+                        <div id="skillname"><p>UI/UX</p><p>70%</p></div>
+                        <progress id="skillprogress" value="70" max="100"></progress>
+                    </div>
+                    <div id="skill">
+                        <div id="skillname"><p>HTML</p><p>75%</p></div>
+                        <progress id="skillprogress" value="75" max="100"></progress>
+                    </div>
+                    <div id="skill">
+                        <div id="skillname"><p>CSS</p><p>60%</p></div>
+                        <progress id="skillprogress" value="60" max="100"></progress>
+                    </div>
+                </div>
+
+                <div id="col">
+                    <div id="skill">
+                        <div id="skillname"><p>JS</p><p>40%</p></div>
+                        <progress id="skillprogress" value="40" max="100"></progress>
+                    </div>
+                    <div id="skill">
+                        <div id="skillname"><p>BOOTSTRAP</p><p>LOCKED</p></div>
+                        <progress id="skillprogress" value="0" max="100"></progress>
+                    </div>
+                    <div id="skill">
+                        <div id="skillname"><p>REACT</p><p>LOCKED</p></div>
+                        <progress id="skillprogress" value="0" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+            <div id="title">
+                <p class="back">PROJECTS</p>
+                <p class="middle">My Work</p>
+            </div>
+            <div id="myprojects">
+                <div id="col">
+                    <div id="project">
+                        <div id="projectImg"><img src="./images/project1.png" alt="to-do_app"></div>
+                        <div id="filter" class="hide"></div>
+                        <div id="hidden" class="hide">
+                            <p id="projectname">To-Do List app</p>
+                            <p id="desc">
+                                Mini To-Do responsive app for everyday tasks
+                            </p>
+                            <a href="https://to-do-list-delta-coral-11.vercel.app/" target="_blank" rel="noopener noreferel">Live Demo</a>
+                            <div id="langs">
+                                <p id="html">HTML</p>
+                                <p id="css">CSS</p>
+                                <p id="js">JS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="project">
+                        <div id="projectImg"><img src="./images/project2.png" alt="calculator_app"></div>
+                        <div id="filter" class="hide"></div>
+                        <div id="hidden" class="hide">
+                            <p id="projectname">Basic calculator app</p>
+                            <p id="desc">
+                                Basic ccalculator that do one operation at a time
+                            </p>
+                            <a href="https://calculator-two-puce-88.vercel.app/" target="_blank" rel="noopener noreferel">Live Demo</a>
+                            <div id="langs">
+                                <p id="html">HTML</p>
+                                <p id="css">CSS</p>
+                                <p id="js">JS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="col">
+                    <div id="project">
+                        <div id="projectImg"><img src="./images/project3.png" alt="rock/paper/scissors_app"></div>
+                        <div id="filter" class="hide"></div>
+                        <div id="hidden" class="hide">
+                            <p id="projectname">Rock Paper Scissors app</p>
+                            <p id="desc">
+                                Simple Rock Paper Scissors Game
+                            </p>
+                            <a href="https://rock-paper-scissors-seven-sepia.vercel.app/" target="_blank" rel="noopener noreferel">Live Demo</a>
+                            <div id="langs">
+                                <p id="html">HTML</p>
+                                <p id="css">CSS</p>
+                                <p id="js">JS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="project">
+                        <div id="projectImg"><img src="./images/project4.png" alt="to-do_app"></div>
+                        <div id="filter" class="hide"></div>
+                        <div id="hidden" class="hide">
+                            <p id="projectname">Etch a Skitch Game app</p>
+                            <p id="desc">
+                                A Game where you can Draw pixle art how cool is that
+                            </p>
+                            <a href="https://etch-a-sketch-beige-chi.vercel.app/">Live Demo</a>
+                            <div id="langs">
+                                <p id="html">HTML</p>
+                                <p id="css">CSS</p>
+                                <p id="js">JS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Contact -->
@@ -58,6 +184,7 @@
 
     <script>
         const navLinks = document.querySelectorAll("#sections a")
+        const projects = document.querySelectorAll("#project")
 
         // scroll based navbar highlight
         window.addEventListener('scroll', () => {
@@ -66,16 +193,30 @@
         const scrolled = parseInt((winScroll / height) * 100);
         navLinks.forEach(item => item.classList.remove("selected"))
 
-        if(0 <= scrolled && scrolled < 33) {
+        if(0 <= scrolled && scrolled < 17) {
             document.querySelector("#sections a:nth-of-type(1)").classList.add('selected')}
-        else if (33 <= scrolled && scrolled < 66) {
+        else if (17 <= scrolled && scrolled < 44) {
                 document.querySelector("#sections a:nth-of-type(2)").classList.add('selected')}
-        else if (66 <= scrolled && scrolled < 100) {
+        else if (44 <= scrolled && scrolled < 100) {
                 document.querySelector("#sections a:nth-of-type(3)").classList.add('selected')}
         else if (scrolled === 100) {
                 document.querySelector("#sections a:nth-of-type(4)").classList.add('selected')}
+            console.log(scrolled);
+            
         });
-
+        // project animation
+        projects.forEach((item) => {
+            item.addEventListener("mouseenter", () => {
+                const childerns = item.children
+                childerns[1].classList.remove("hide")
+                childerns[2].classList.remove("hide")
+            })
+            item.addEventListener("mouseleave", () => {
+                const childerns = item.children
+                childerns[1].classList.add("hide")
+                childerns[2].classList.add("hide")
+            })
+        })
     </script>
 </body>
 </html>
