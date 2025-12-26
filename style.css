@@ -337,6 +337,93 @@ html,body {
 }
 /* ====================================================================================== */
 
+/* CONTACT section */
+#contact {
+    flex-direction: column;
+}
+#contactinfo {
+    flex: 1;
+    display: flex;
+}
+#socials {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    border-right: 5px solid #FC6736;
+    padding: 48px;
+    line-height: 1.8;
+    gap: 24px;
+}
+#socials p {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 16px;
+    font-size: clamp(16px, calc(6px + 1vw),36px);
+}
+#socials div {display:flex; gap: 24px;}
+#socials svg {
+    width: clamp(40px, calc(10px + 5vw),50px);
+    height: clamp(40px, calc(10px + 5vw),50px);
+    transition: all 0.4s ease-in-out;
+}
+/* social hover */
+#socials svg:hover { transform: scale(1.2);}
+#linkedin:hover {fill: #0077B5;}
+#facebook:hover {fill: #1877F2 ;}
+#github:hover {fill: #FC6736;}
+#socials h1 {transition: all 0.3s ease-in-out;}
+#socials h1:hover {color: #FC6736;border-bottom: 3px solid #FC6736; transform: scale(1.1);}
+#form {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 48px;
+    gap: 24px;
+}
+#form div {display: flex;gap: 16px;}
+#form div input {
+    font-family: "archivo black",sans-serif;
+    padding: 16px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 6px;
+    flex: 1;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 20px #FC6736;
+}
+#form div input:focus,input:hover {
+    transform: scale(1.01); 
+    order: 2px solid #FC6736;
+}
+textarea {
+    min-height: 200px; 
+    border-radius: 6px; 
+    padding: 16px; 
+    resize: vertical;
+    font-family: "archivo black",sans-serif; 
+    font-size: 18px; 
+    outline: none;
+    box-shadow: 0 0 20px #FC6736;
+}
+textarea:hover, textarea:focus {
+    transform: scale(1.01); 
+    border: 2px solid #FC6736;
+}
+input[type="submit"] {
+    background-color: #FC6736; 
+    width: 20%; 
+    margin: 0 auto; 
+    padding: 20px 30px; 
+    border-radius: 30px;
+    font-family: "archivo black",sans-serif;
+    font-size: clamp(16px, calc(6px + 1vw),36px);
+    box-shadow: 0 0 20px #FC6736;
+}
+/* ====================================================================================== */
+
 /* Media Queries */
 @media (max-width: 768px) {
     /* home section */
@@ -358,8 +445,16 @@ html,body {
 
     /* projects */
     #myprojects {flex-direction: column;}
+
+    /* contact */
+    #contactinfo {flex-direction: column;}
+    #socials {border-right: none; border-bottom: 5px solid #FC6736; padding: 48px 0px;}
+
+    #form div {flex-direction: column;}
+    input[type="submit"] {width: 50%;}
 }
 @media (max-width:600px) {
     #myskills {flex-direction: column;}
+    #form {padding: 48px 16px;}
     
 }
