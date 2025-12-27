@@ -16,6 +16,7 @@ html,body {
     width: 100%;
     font-family: "archivo black",sans-serif;
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 /* ====================================================================================== */
@@ -39,7 +40,6 @@ html,body {
     display: flex;
     overflow: hidden;
 }
-
 .section:nth-of-type(2n+1) {
     background-color: #1c1c1c;
     color: #FC6736;
@@ -239,6 +239,7 @@ html,body {
     color: #1c1c1c; 
     text-align: center;
     border-color: #FC6736;
+    margin-bottom: 48px;
 }
 #info #cv-btn:hover {background-color: #fff; color: #FC6736;}
 /* ============================================================================================================== */
@@ -369,12 +370,13 @@ html,body {
     height: clamp(40px, calc(10px + 5vw),50px);
     transition: all 0.4s ease-in-out;
 }
+#socials div svg {fill: #fff;}
 /* social hover */
 #socials svg:hover { transform: scale(1.2);}
 #linkedin:hover {fill: #0077B5;}
 #facebook:hover {fill: #1877F2 ;}
 #github:hover {fill: #FC6736;}
-#socials h1 {transition: all 0.3s ease-in-out;}
+#socials h1 {transition: all 0.3s ease-in-out; font-size: 48px;}
 #socials h1:hover {color: #FC6736;border-bottom: 3px solid #FC6736; transform: scale(1.1);}
 #form {
     flex: 2;
@@ -407,6 +409,7 @@ textarea {
     font-size: 18px; 
     outline: none;
     box-shadow: 0 0 20px #FC6736;
+    transition: all 0.3s ease-in-out;
 }
 textarea:hover, textarea:focus {
     transform: scale(1.01); 
