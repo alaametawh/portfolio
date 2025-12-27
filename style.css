@@ -285,6 +285,7 @@ html,body {
 #projectImg img{
     width: 100%;
     border-radius: 30px;
+    border: 5px solid #1c1c1c;
 }
 #filter {
     border-radius: 30px;
